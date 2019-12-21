@@ -1,4 +1,4 @@
-package pgdp.collections;
+package og;
 
 public enum Gender {
     FEMALE, MALE

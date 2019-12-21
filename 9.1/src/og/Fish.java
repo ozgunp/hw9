@@ -1,4 +1,4 @@
-package pgdp.collections;
+package og;
 
 public enum Fish {
     SILVERFISH, SARDELLE, SARDINE

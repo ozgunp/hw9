@@ -1,4 +1,4 @@
-package pgdp.collections;
+package og;
 
 public class Penguin {
     private final int birthYear;
@@ -13,14 +13,20 @@ public class Penguin {
         this.favoriteFish = favoriteFish;
     }
 
+    @Override
     public boolean equals(Object other) {
         // TODO
-        return false;
+        if(other instanceof Penguin){
+            Penguin otherPenguin = (Penguin) other;
+            return this.getBirthYear() == otherPenguin.getBirthYear() && this.getName().equals(otherPenguin.getName()) && this.getGender() == otherPenguin.getGender();
+        }else{
+            return false;
+        }
     }
 
     public int hashCode() {
         // TODO
-        return -1;
+        return super.hashCode()+this.getBirthYear();
     }
 
     public int getBirthYear() {
