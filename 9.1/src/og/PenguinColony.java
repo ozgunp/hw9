@@ -49,6 +49,7 @@ public class PenguinColony {
         return new PenguinColony(nhs);
     }
 
+    // Bu fonksiyonda penguinFriends listesinden gelen penguenin bizim hashset'te de oldugundan emin olmak gerekiyor. direk get(0) ile aldigimiz penguen hashset'te olmama ihtimali var mi? o durumda hashset'te olan ilk pengueni dondurmemiz gerekiyor. 
     public Penguin findFirstFriend(LinkedList<Penguin> penguinFriends) {
         // TODO
         if(penguinFriends.size() > 0){
@@ -60,6 +61,8 @@ public class PenguinColony {
 
     }
 
+    // her penguenin favori baligi var, hashset imizdeki her penguenin favori baligi fish setinde var mi? onun kontrolu. ornegin penguenlerin favori baliklari 6 farkli turde. fish set inde bu 6 tur de bulunmali. biri bile bulunmaz ise false dondurmeli. 
+    // test sinifinda 4 penguen SILVERFISH ve SARDELLE baliklarini seviyorlar, o hald bu 2 balik da fish setinde olmali.
     public boolean canFeedPenguinsWithProperty(Predicate<? super Penguin> pred, Set<Fish> fishes) {
         // TODO
         boolean conn = true;
