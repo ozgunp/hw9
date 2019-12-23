@@ -49,6 +49,7 @@ public class PenguinColony {
         return new PenguinColony(nhs);
     }
 
+    // Bu fonksiyonda penguinFriends listesinden gelen penguenin bizim hashset'te de oldugundan emin olmak gerekiyor. direk get(0) ile aldigimiz penguen hashset'te olmama ihtimali var mi? o durumda hashset'te olan ilk pengueni dondurmemiz gerekiyor. 
     public Penguin findFirstFriend(LinkedList<Penguin> penguinFriends) {
         // TODO
         if(penguinFriends.size() > 0){
