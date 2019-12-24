@@ -1,5 +1,3 @@
-package pgdp.streams;
-
 import java.time.LocalDateTime;
 
 public class PenguinData {

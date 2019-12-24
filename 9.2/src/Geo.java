@@ -1,5 +1,3 @@
-package pgdp.streams;
-
 public class Geo {
   public double latitude;
   public double longitude;
