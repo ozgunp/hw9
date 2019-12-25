@@ -27,6 +27,7 @@ public class Penguin {
         return trackID;
     }
 
+    // public String toStringUsingStreams()  metodu icin: basi "Penguin{locations=[" sonu " ], trackID=" olan metnin arasindaki konum bilgisini stream ile yazmasi isteniyor. asagida return un icine yazdim ama emin de olamadim bu sekilde olur mu diye.
     public String toStringUsingStreams() {
         // TODO
 
